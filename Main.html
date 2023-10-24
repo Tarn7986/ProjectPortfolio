@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>My Website</title>
+    <script src="https://kit.fontawesome.com/ec327d2d3d.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("Black.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        
+        p{
+            color: white;
+        }
+
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            position: relative; 
+    transition: color 0.3s;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav a:hover {
+            color: orangered;
+        }
+        nav a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background-color: orangered;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+}
+nav a:hover::after {
+    width: 100%;
+    background-color: white;
+    transition: width 0.3s ease, background-color 0.3s ease;
+}
+        h1{
+            font-style: Fantasy;
+        }
+        .container1 {
+            padding: 20px;
+            text-align: center;
+            display: inline-block; 
+            width: 45%; 
+            margin-right: 5px;
+        }
+        .container2 {
+            padding: 20px;
+            text-align: center;
+            display: inline-block;
+            width: 45%;
+        }
+
+        .container2 img {
+            max-width: 100%;
+            height: 600px;
+        }
+
+        .container1 p {
+            font-size: 18px;
+            color: White;
+        }
+        img{
+            border-radius: 50%;
+        }
+        .know-more-button {
+            background-color: SkyBlue;
+            color: white;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .know-more-button:hover {
+            background-color: DodgerBlue;
+        }
+        .social-icon {
+    margin-right: 26px;
+            font-size: 32px;
+  }
+        .ContainerC {
+            display: inline-block;
+            width: calc(20% - 10px);
+            margin-right: 10px;
+            background-color: Grey;
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+            transition: background-color 0.3s;
+        }
+        .ContainerC:last-child {
+            margin-right: 0;
+        }
+        .ContainerC:hover {
+            background-color: Black;
+        }
+        .tab-titles{
+            display: flex;
+            margin: 20px 0px 40px;
+        }
+        .tab-links{
+            margin-right: 50px;
+            font-size: :18px;
+            font-weight: 500;
+            cursor : pointer;
+            position: relative;
+        }
+        .tab-links::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: orangered;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.7s ease;
+}
+        .tab-links.active-link::after{
+        width: 16%;    
+        }
+        .tab-contents ul li{
+            list-style: none;
+            margin: 10px 0;
+        }
+        .tab-contents ul li span{
+            color: aqua;
+            font-size: 14px;
+        }
+        .tab-contents{
+            display:none;
+        }
+        .tab-contents.active-tab{
+            display: block;
+        }
+        a.one:hover {font-size:150%;}
+        .main-container {
+    display: flex;
+  }
+  .box {
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 10px;
+    background: Red;
+    border: 1px solid #ccc;
+  }
+
+  .small-box {
+      font-color:White;
+    width: 50px;
+    height: 30px;
+    background: Black;
+    border: 1px solid Black;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: black;
+    transition: all 0.3s;
+  }
+
+  .small-box:hover {
+    width: 70px;
+    height: 50px;
+    background: White;
+    border: 2px solid red;
+    font-size: 16px;
+    color: red;
+  }
+        .text-container {
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      color: Red;
+      margin: 20px;
+      display: inline;
+    }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            justify-content: space-between;
+        }
+        .box {
+            
+            border-radius: 20px;
+            margin: 1%;
+            box-sizing: border-box;
+            text-align: center;
+            padding: 10px;
+            font-size: 18px;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            background-color: black;
+            border: 2px solid red;
+            color: white;
+        }
+        .box:hover {
+            background-color: red;
+            border-color: black;
+            transform: scale(1.1);
+        }
+        .box1 {
+            height: 100px;
+            Width: 400px;
+        }
+        .box2 {
+            height: 100px;
+            Width: 400px;
+        }
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-form, .contact-info {
+    background-color: none;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+    text-align: left;
+    width: 400px;
+    height: auto;
+}
+.contact-form h2, .contact-info h2 {
+    margin: 0;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form button {
+    padding: 10px;
+    margin-top: 5px;
+    background-color: Gray;
+}
+
+.contact-form button {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: saddlebrown;
+}
+        .progress-container {
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: lightgray;
+            margin-bottom: 6px;
+            border-radius: 16px;
+        }
+
+        .progress-bar-inner {
+            width: 0;
+            height: 100%;
+            background-color: deepskyblue;
+            transition: width 0.5s;
+        }
+        .image-BoxSize {
+            display: flex;
+        }
+
+        .image-BoxSize img {
+            flex: 1;
+            max-width: 100%;
+            height: 260px;
+            margin: 0 6%;
+            transition: transform 0.2s;
+            border-radius: 0;
+            transition: transform 0.2s;
+        }
+
+        .image-BoxSize img:hover {
+            transform: scale(1.2);
+        }
+
+        .link-BoxSize {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            width: 100%;
+        }
+
+        .link-BoxSize a {
+            color: White;
+        }
+    </style>
+<body>
+    <header>
+        <h1>Portfolio</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li class="one"><a href="Main.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="ContactUs.html">Contact</a></li>
+            <li><a href="Main.html">Portfolio</a></li>
+        </ul>
+    </nav>
+    <div class="container1">
+        <h3>Hello!</h3>
+        <h1 style="font-size: 60px;">I'm<span style="color: red;">Tarnjot</span> Kaur Bhagtana</h1>
+        <h3>I'm a Computer Programming Student<span class="text-container"></span></h3>
+        <a class="social-icon" href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></i></a>
+<a class="social-icon" href="https://www.linkedin.com/in/tarnjot-kaur-bhagtana-63051b263/" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a class="social-icon" href="https://github.com/TarnjotKaur7986" target="_blank"><i class="fab fa-github"></i></a>
+<a class="social-icon" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a><br><br><br>
+    </div>
+    <div class="container2">
+        <img src="Tanu.jpeg" alt="Your Photo">
+    </div><br><br><br>
+    <h1>My Education:</h1><br><br><br>
+    <div class="ContainerC hello1">
+        <ul>
+            <li><h3>Computer Programming(Co-op)</h3>
+                <p>Georgian College at ILAC</p>
+                <p>Toronto, ON</p>
+                <p>Expected Graduation August 2024</p>
+</li>
+    </div>
+    
+
+    <div class="ContainerC hello2">
+        <li><h3>Guru Ram Das Academy School,2021 - 2022</h3>
+                <p>SUPERMEDICAL(MATHS, BIOLOGY, CHEMISTRY, PHYSICS, COMPUTER SCIENCE)</p>
+                </li>
+        </ul>
+    </div>
+
+    <div class="ContainerC hello3">
+        <h2>3.</h2>Skilled and motivated Computer Programming student seeking a Co-op position from January to April 2024. Strong experience in HTML, CSS, JavaScript, Java, Python and customer service.</p>
+    </div><br><br><br>
+    <h1>ABOUT ME</h1>
+    <p>Skilled and motivated <span style="color: red;">Computer Programming student</span> seeking a <span style="color: red;">Co-op position</span> from January to April 2024. Strong experience in HTML, CSS, JavaScript, Java, Python and customer service. Proven team player with a positive attitude and ability to contribute to the company's success. 
+</p>
+    <a href="mailto:ktarn62@gmail.com" target="_blank">
+        <i class="fas fa-envelope"></i> Email: ktarn62@gmail.com
+    </a><br><br><br>
+    <a href="tel:+4375770119">
+        <i class="fas fa-phone">+4375770119</i>
+    </a><br><br><br><hr>
+        
+    <header>
+        <h1>My Services</h1>
+    </header>
+    <div class="tab-contents active-tab" id="skills">
+        <div class="container">
+        <div class="box box1">
+            <p>· Front-End Development</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar1">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+        <div class="box box2">
+            <p>· Web Development With HTML, Cascading Style Sheets (CSS), JavaScript</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar2">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+            <div class="container">
+        <div class="box box1">
+            <p>· SQL</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar3">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+        <div class="box box2">
+            <p> · JavaScript Frameworks</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar4">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+                <div class="container">
+        <div class="box box1">
+            <p>· Java</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar5">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+        <div class="box box2">
+            <p>· Python (Programming Language)</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar6">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+                    <div class="container">
+        <div class="box box1">
+            <p>ASP.Net</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar7">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+        <div class="box box2">
+            <p>Cloud Computing</p>
+            <div class="progress-container">
+        <div class="progress-bar" id="progress-bar8">
+            <div class="progress-bar-inner"></div>
+        </div>
+    </div>
+        </div>
+    </div>
+                </div>
+            <div class="tab-contents" id="projects">
+        <ul>
+            <li><h3>1.Responsive Web Design Certification:</h3> <p>https://www.freecodecamp.org/certification/TarnjotKaur/responsive-web-design</p></li>
+            <li><h3>2.JavaScript Algorithms and Data Structures </h3>
+                <p>https://www.freecodecamp.org/certification/TarnjotKaur/javascript-algorithms-and-data-structures</p></li>
+            <li>Item 3</li>
+        </ul>
+            </div>
+                    <header>
+                <h1>My Certifications</h1>
+                    </header>
+                    <div class="image-BoxSize">
+        <img src="Certificate1.png" alt="Image 1">
+        <img src="Certificate2.png" alt="Image 2">
+    </div><br><br>
+
+    <div class="link-BoxSize">
+        <a href="https://www.freecodecamp.org/certification/TarnjotKaur/responsive-web-design">Link 1:https://www.freecodecamp.org/certification/TarnjotKaur/responsive-web-design</a><br>
+        <a href="Link 2:https://www.freecodecamp.org/certification/TarnjotKaur/javascript-algorithms-and-data-structures">Link 2:https://www.freecodecamp.org/certification/TarnjotKaur/javascript-algorithms-and-data-structures</a><br>
+    </div>
+                <div><hr>
+                <header>
+        <h1>Contact Me</h1>
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required>
+                
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <button id="openPageButton">Send Message</button>
+            </form>
+        </div>
+        <div class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Name: Tarnjot Kaur Bhagtana</p>
+            <p>Email: ktarn62@gmail.com</p>
+            <p>Phone: (437) 577-0119</p>
+        </div>
+                    </div>
+    </header>
+    <footer>
+        <p>&copy; 2023 My Website</p>
+    </footer>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+      var typed = new Typed(".text-container", {
+        strings: ["Computer Programming Student", " Front End Developer", " Web Developer"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true,
+      });
+    });
+           
+        // Function to animate progress
+        function animateProgress(progressBar, targetPercentage) {
+            const progressBarInner = progressBar.querySelector('.progress-bar-inner');
+            let currentWidth = 0;
+
+            // Animate the progress
+            const interval = 100;
+            const step = targetPercentage / 60; // 6 seconds (60 frames)
+            const animation = setInterval(function() {
+                currentWidth += step;
+                progressBarInner.style.width = currentWidth + '%';
+
+                if (currentWidth >= targetPercentage) {
+                    clearInterval(animation);
+
+                    // Restart the animation after 6 seconds
+                    setTimeout(function() {
+                        animateProgress(progressBar, targetPercentage);
+                    }, 6000);
+                }
+            }, interval);
+        }
+
+        // Start the animation for the first progress bar (70%) and repeat
+        const progressBar1 = document.getElementById('progress-bar1');
+        animateProgress(progressBar1, 90);
+
+        // Start the animation for the second progress bar (80%) and repeat
+        const progressBar2 = document.getElementById('progress-bar2');
+        animateProgress(progressBar2, 90);
+
+        // Start the animation for the third progress bar (50%) and repeat
+        const progressBar3 = document.getElementById('progress-bar3');
+        animateProgress(progressBar3, 70);
+
+        // Start the animation for the fourth progress bar (90%) and repeat
+        const progressBar4 = document.getElementById('progress-bar4');
+        animateProgress(progressBar4, 90);
+
+        // Start the animation for the fifth progress bar (60%) and repeat
+        const progressBar5 = document.getElementById('progress-bar5');
+        animateProgress(progressBar5, 70);
+
+        // Start the animation for the sixth progress bar (75%) and repeat
+        const progressBar6 = document.getElementById('progress-bar6');
+        animateProgress(progressBar6, 70);
+
+        // Start the animation for the seventh progress bar (45%) and repeat
+        const progressBar7 = document.getElementById('progress-bar7');
+        animateProgress(progressBar7, 60);
+
+        // Start the animation for the eighth progress bar (85%) and repeat
+        const progressBar8 = document.getElementById('progress-bar8');
+        animateProgress(progressBar8, 60);
+                    
+        </script>
+</body>
+</html>
